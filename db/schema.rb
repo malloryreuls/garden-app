@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170505195128) do
+ActiveRecord::Schema.define(version: 20170505203308) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,14 +20,15 @@ ActiveRecord::Schema.define(version: 20170505195128) do
     t.integer "sun"
     t.string "germination"
     t.string "season"
-    t.integer "depth"
-    t.integer "spacing"
+    t.string "depth"
+    t.string "spacing"
     t.integer "days_to_harvest"
     t.string "friends"
     t.string "foes"
     t.text "more_information"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "plant_height"
   end
 
 end
