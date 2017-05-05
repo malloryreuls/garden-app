@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<p><- <%= link_to 'Back to index', plants_path %></p>
 
 <p>
   <strong>Name:</strong>
@@ -55,5 +55,4 @@
   <%= @plant.more_information %>
 </p>
 
-<%= link_to 'Edit', edit_plant_path(@plant) %> |
-<%= link_to 'Back', plants_path %>
+<%= link_to 'Edit', edit_plant_path(@plant) %>
