@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @plant.name %>
+</p>
+
+<p>
+  <strong>Sun:</strong>
+  <%= @plant.sun %>
+</p>
+
+<p>
+  <strong>Germination:</strong>
+  <%= @plant.germination %>
+</p>
+
+<p>
+  <strong>Season:</strong>
+  <%= @plant.season %>
+</p>
+
+<p>
+  <strong>Depth:</strong>
+  <%= @plant.depth %>
+</p>
+
+<p>
+  <strong>Spacing:</strong>
+  <%= @plant.spacing %>
+</p>
+
+<p>
+  <strong>Days to harvest:</strong>
+  <%= @plant.days_to_harvest %>
+</p>
+
+<p>
+  <strong>Friends:</strong>
+  <%= @plant.friends %>
+</p>
+
+<p>
+  <strong>Foes:</strong>
+  <%= @plant.foes %>
+</p>
+
+<p>
+  <strong>More information:</strong>
+  <%= @plant.more_information %>
+</p>
+
+<%= link_to 'Edit', edit_plant_path(@plant) %> |
+<%= link_to 'Back', plants_path %>

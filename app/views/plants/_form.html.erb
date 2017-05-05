@@ -1,0 +1,67 @@
+<%= form_with(model: plant, local: true) do |form| %>
+  <% if plant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(plant.errors.count, "error") %> prohibited this plant from being saved:</h2>
+
+      <ul>
+      <% plant.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :plant_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sun %>
+    <%= form.number_field :sun, id: :plant_sun %>
+  </div>
+
+  <div class="field">
+    <%= form.label :germination %>
+    <%= form.text_field :germination, id: :plant_germination %>
+  </div>
+
+  <div class="field">
+    <%= form.label :season %>
+    <%= form.text_field :season, id: :plant_season %>
+  </div>
+
+  <div class="field">
+    <%= form.label :depth %>
+    <%= form.number_field :depth, id: :plant_depth %>
+  </div>
+
+  <div class="field">
+    <%= form.label :spacing %>
+    <%= form.number_field :spacing, id: :plant_spacing %>
+  </div>
+
+  <div class="field">
+    <%= form.label :days_to_harvest %>
+    <%= form.number_field :days_to_harvest, id: :plant_days_to_harvest %>
+  </div>
+
+  <div class="field">
+    <%= form.label :friends %>
+    <%= form.text_field :friends, id: :plant_friends %>
+  </div>
+
+  <div class="field">
+    <%= form.label :foes %>
+    <%= form.text_field :foes, id: :plant_foes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :more_information %>
+    <%= form.text_area :more_information, id: :plant_more_information %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
