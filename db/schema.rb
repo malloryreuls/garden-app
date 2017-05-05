@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170505203308) do
+ActiveRecord::Schema.define(version: 20170505204240) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "plants", force: :cascade do |t|
     t.string "name"
-    t.integer "sun"
+    t.string "sun"
     t.string "germination"
     t.string "season"
     t.string "depth"
