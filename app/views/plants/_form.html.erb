@@ -18,7 +18,7 @@
 
   <div class="field">
     <%= form.label :sun %>
-    <%= form.number_field :sun, id: :plant_sun %>
+    <%= form.text_field :sun, id: :plant_sun %>
   </div>
 
   <div class="field">
@@ -33,12 +33,17 @@
 
   <div class="field">
     <%= form.label :depth %>
-    <%= form.number_field :depth, id: :plant_depth %>
+    <%= form.text_field :depth, id: :plant_depth %>
   </div>
 
   <div class="field">
     <%= form.label :spacing %>
-    <%= form.number_field :spacing, id: :plant_spacing %>
+    <%= form.text_field :spacing, id: :plant_spacing %>
+  </div>
+
+  <div class="field">
+    <%= form.label :plant_height %>
+    <%= form.number_field :plant_height, id: :plant_plant_height %>
   </div>
 
   <div class="field">
