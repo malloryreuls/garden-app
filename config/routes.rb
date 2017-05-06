@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root to: 'plants#index'
+  root 'home#index'
+
+  devise_for :users
 
   resources :plants
 
