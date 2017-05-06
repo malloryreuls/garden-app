@@ -1,3 +1,4 @@
 class MyPlant < ApplicationRecord
-  belongs_to :plants, :users
+  belongs_to :plants
+  belongs_to :users
 end
