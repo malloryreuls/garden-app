@@ -1,0 +1,13 @@
+test:
+
+development:
+  app_id: 724118137760161
+  app_secret: 512eed5a66236065e09a87ba179e4411
+  callback_url: "http://ace9871a.ngrok.io/users/auth/facebook/callback"
+
+staging:
+
+production:
+  app_id: 724118137760161
+  app_secret: 512eed5a66236065e09a87ba179e4411
+  callback_url: "https://garden-time.herokuapp.com/users/auth/facebook/callback"
