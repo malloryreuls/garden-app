@@ -3,6 +3,7 @@
 
 <h2>Plants <small><%= link_to '(Add Plant)', new_plant_path %></small></h2>
 <% @plants.each do |plant| %>
-  <%= plant.name %>
-  <%= link_to 'Show', plant %>
+  <ul>
+    <li style="list-style:none"><%= link_to plant.name, plant %></li>
+  </ul>
 <% end %>
