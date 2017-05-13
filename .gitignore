@@ -33,3 +33,4 @@
 /tags
 /.env
 /.rbenv-vars
+.vagrant/

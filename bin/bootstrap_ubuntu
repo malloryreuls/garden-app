@@ -51,3 +51,5 @@ bundle install
 rbenv rehash
 
 bin/rake db:migrate
+
+wget "https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip"

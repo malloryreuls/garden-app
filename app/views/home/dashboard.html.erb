@@ -1,0 +1,9 @@
+<h1>🐝 My Garden 🐞</h1>
+<p>Track your garden.</p>
+
+<h2>My Plants</h2>
+<% @my_plants.each do |my_plant| %>
+  <ul>
+    <li style="list-style:none"><%= link_to my_plant.plant.name, my_plant.plant %></li>
+  </ul>
+<% end %>
