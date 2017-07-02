@@ -1,9 +1,23 @@
-<h1>🐝 Homesteady 🐞</h1>
-<p>Track your garden.</p>
-
-<h2>Plants <small><%= link_to '(Add Plant)', new_plant_path %></small></h2>
-<% @plants.each do |plant| %>
-  <ul>
-    <li style="list-style:none"><%= link_to plant.name, plant %></li>
-  </ul>
-<% end %>
+<div class="section">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="main-title page-header">
+        <h1 class="text-center">🐝 Homesteady 🐞<br><small>Track your garden</small></h1>
+        <div>
+          <p class="text-center">
+            <%= link_to 'Add Plant', new_plant_path, class: 'btn btn-primary' %>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+        <% @plants.each do |plant| %>
+          <ul>
+            <div class="col-md-1">
+              <li style="list-style:none"><%= link_to plant.name, plant %></li>
+            </div>
+          </ul>
+        <% end %>
+  </div>
+</div>
